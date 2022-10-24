@@ -6,8 +6,8 @@ const FirstPolicy = require('../policies/FirstPolicy')
 /**
  * POST /v1/api/first-route
  * @summary My first route.
- * @tags logs
- * @param {Log} request.body.required - log - application/json
+ * @tags ApiTag
+ * @param {FirstPayload} request.body.required - log - application/json
  * @return 200 - Success response - application/json
  */
 router.get('/', FirstPolicy.policy, (req, res) => {
